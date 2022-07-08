@@ -11,6 +11,6 @@
 This pipeline processes images acquired in sequential rounds of FISH in PhytoMap experiments. 
 
 **Image registration**: This step corrects shifts in a field-of-view during sample handling and imaging by a global affine alignment using random sample consensus (RANSAC)-based feature matching.  
-**Spot detection and decoding**: [starfish package](https://github.com/spacetx/starfish) is used to detect single RNA molecule-derived spots in registered images, and the spots are decoded based on imaging rounds and channels they are detected.   
+**Spot detection and decoding**: [starfish package](https://github.com/spacetx/starfish) is used to detect single RNA molecule-derived spots in registered images, and the spots are decoded based on imaging rounds and channels they are detected. Deteiled tuorial on starfish is available [here](https://spacetx-starfish.readthedocs.io/en/latest/)  
 **Segmentation**: Cells need to be segmented to allow single-cell analysis. This step is not covered here.  
 **Cell by gene matrix**: Decoded spots are assigned to segmented cells and counted to obtain a cell by gene matrix for downstream analysis.  
