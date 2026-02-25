@@ -10,7 +10,6 @@ from bigstream import affine
 import os
 from skimage import io
 from numcodecs import Blosc
-from dask.array import to_zarr
 
 
 def global_affine_reg(
